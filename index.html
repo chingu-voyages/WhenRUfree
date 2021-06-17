@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>WhenRUfree</title>
+  </head>
+
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <div class="loginbox">
+      <h1>When R U Free? Sign up here!</h1>
+      <p>Schedule your team meetings with WhenRUFree!</p>
+      <form name="login">
+        <div id="first-row" class="row">
+          <input type="text" name="fName" placeholder="First Name" />
+          <input type="text" name="lName" placeholder="Last Name" />
+        </div>
+        <div id="second-row" class="row">
+          <input type="email" name="" placeholder="Email" />
+          <input type="password" name="" placeholder="Enter Password" />
+        </div>
+        <div id="third-row" class="row">
+          <label for="timezone">Choose a Timezone:</label>
+          <select id="timezone" name="timezone">
+            <option value="EST">Eastern Time</option>
+            <option value="PST">Pacific Time</option>
+            <option value="CT">Central Time</option>
+            <option value="MST">Mountain Time</option>
+          </select>
+        </div>
+        <div id="fourth-row" class="row">
+          <input type="Submit" name="" value="Login" />
+        </div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

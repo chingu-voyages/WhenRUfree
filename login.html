@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Login - WhenRUfree</title>
+  </head>
+
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="index.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <h1>login</h1>
+
+    <form name="loginForm">
+      Email<input type="email" name="email" id="email" /> Password<input
+        type="password"
+        name="pswrd"
+        id="password"
+      />
+      <input type="button" onclick="check(this.form)" value="Login" />
+      <input type="reset" value="Cancel" />
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

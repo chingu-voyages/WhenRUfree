@@ -1,0 +1,72 @@
+﻿body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgb(69, 69, 250), white);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: navy;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  float: left;
+  /*margin-left: 9em;*/
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav ul {
+  margin: 0;
+  padding-right: 5em;
+  list-style: none;
+  float: right;
+}
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 50px;
+
+  position: relative;
+}
+nav a {
+  color: navy;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+nav a:hover {
+  color: white;
+  transition: 250ms;
+}
+nav a::before {
+  height: 1em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+nav a:hover::before {
+  width: 100%;
+}
+
+.loginbox {
+  text-align: center;
+}
+
+.loginbox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: 10px;
+}
