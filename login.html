@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-   <head>
-        <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="styleMODAL.css">
-        <meta charset="utf-8">
-    </head>
-<header>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="styleMODAL.css" />
+    <meta charset="utf-8" />
+  </head>
+  <header>
     <div class="container">
       <img src="logo.png" alt="logo" class="logo" />
       <nav class="topnav">
@@ -19,24 +19,45 @@
     </div>
   </header>
   <body>
-    <form name="loginForm" class="loginbox">
+    <form name="loginForm" class="loginbox" id="loginForm">
       <div class="heading">
-        <h1> Returning User? Login Here! </h1>
+        <h1>Returning User? Login Here!</h1>
         <p>Schedule your team meetings with WhenRUFree!</p>
       </div>
-        <div id="second-row" class="row">
-          <input type="email" name="" placeholder="Email" />
-          <input type="password" name="" placeholder="Enter Password" />
-        </div>
-        <div id="third-row" class="row">
-        </div>
-        <div id="fourth-row" class="row">
-          <input type="button" onclick="check(this.form)" value="Login"/>
-        </div>
-  </form>
-  <script src="script.js"></script>
-  <script src="app.js"></script>
-</body>
-
+      <div id="second-row" class="row">
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="password"
+          name="pswrd"
+          id="password"
+          placeholder="Enter Password"
+        />
+      </div>
+      <div id="third-row" class="row"></div>
+      <div id="fourth-row" class="row">
+        <input type="button" onclick="check(this.form)" value="Login" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
 
+<!-- 
+  <body>
+    <h1>login</h1>
+
+    <form name="loginForm">
+      Email<input type="email" name="email" id="email" /> Password<input
+        type="password"
+        name="pswrd"
+        id="password"
+      />
+      <input type="button" onclick="check(this.form)" value="Login" />
+      <input type="reset" value="Cancel" />
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+
+ -->
