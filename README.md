@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/67667160/122659358-60af9380-d145-11eb-999e-864e49249e71.png)
+
+
 # WhenRUfree?
 ## Table of Contents
 - Purpose
@@ -7,7 +10,10 @@
 
 ## Purpose
 
-
+- WhenRUfree aims to provide professionals with a responsive, modern way to find the best time to meet as a group. 
+- Through responsiveness, WhenRUfree allows people across all different devices to coordinate and effectively schedule critial meetings.
+- Through timezone intergration, we are able to allow users from coast to coast to effortlessly collaborate availability.
+- It's FREE!
 
 ## Built With
 HTML
@@ -26,15 +32,5 @@ To get a local copy follow these steps.
 
 
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
-
-> Own it & Make it your Own!
