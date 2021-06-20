@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="styleMODAL.css" />
     <meta charset="utf-8" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Login - WhenRUfree</title>
   </head>
-
   <header>
     <div class="container">
       <img src="logo.png" alt="logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="#">Login</a></li>
-          <li><a href="index.html">Sign Up</a></li>
-        </ul>
+      <nav class="topnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <div class="nav-list">
+          <a href="index.html">Sign Up</a>
+          <a href="login.html">Login</a>
+        </div>
       </nav>
     </div>
   </header>
+  <body>
+    <form name="loginForm" class="loginbox" id="loginForm">
+      <div class="heading">
+        <h1>Returning User? Login Here!</h1>
+        <p>Schedule your team meetings with WhenRUFree!</p>
+      </div>
+      <div id="second-row" class="row">
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="password"
+          name="pswrd"
+          id="password"
+          placeholder="Enter Password"
+        />
+      </div>
+      <div id="third-row" class="row"></div>
+      <div id="fourth-row" class="row">
+        <input type="button" onclick="check(this.form)" value="Login" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- 
   <body>
     <h1>login</h1>
 
@@ -32,4 +59,5 @@
 
     <script src="app.js"></script>
   </body>
-</html>
+
+ -->

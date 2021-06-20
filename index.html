@@ -2,29 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="style.css" rel="stylesheet" />
     <title>WhenRUfree</title>
   </head>
 
   <header>
-    <div class="container">
+    <div class="topnav" id="myTopnav">
       <img src="logo.png" alt="logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
-      </nav>
+      <a href="login.html" class="active">Login</a>
+      <a href="index.html">Sign Up</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </header>
   <body>
     <div class="loginbox">
-      <h1>When R U Free? Sign up here!</h1>
-      <p>Schedule your team meetings with WhenRUFree!</p>
-      <form name="login">
+      <div class="heading">
+        <h1>When R U Free? Sign up here!</h1>
+        <p>Schedule your team meetings with WhenRUFree!</p>
+      </div>
+      <form>
         <div id="first-row" class="row">
-          <input type="text" name="fName" placeholder="First Name" />
-          <input type="text" name="lName" placeholder="Last Name" />
+          <input type="text" name="" placeholder="First Name" />
+          <input type="text" name="" placeholder="Last Name" />
         </div>
         <div id="second-row" class="row">
           <input type="email" name="" placeholder="Email" />
@@ -40,11 +45,11 @@
           </select>
         </div>
         <div id="fourth-row" class="row">
-          <input type="Submit" name="" value="Login" />
+          <button>Sign Up</button>
         </div>
       </form>
     </div>
-
     <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
