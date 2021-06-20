@@ -1,4 +1,30 @@
-# voyage-tasks
+# WhenRUfree?
+## Table of Contents
+- Purpose
+- Built With
+- Getting Started
+- Installation
+
+## Purpose
+
+
+
+## Built With
+HTML
+CSS
+Javascript
+
+## Getting Started
+To get a local copy follow these steps.
+### Installation
+- Clone the repo
+- run in your local browser
+
+
+
+
+
+
 
 Your project's `readme` is as important to success as your code. For 
 this reason you should put as much care into its creation and maintenance
