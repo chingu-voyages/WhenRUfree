@@ -120,6 +120,21 @@ header {
   display: none;
 }
 
+.calender-container {
+  position: relative;
+  font-size: 1.75rem;
+}
+
+.calender {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.months select {
+  width: 50%;
+}
+
 @media only screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -157,4 +172,8 @@ header {
   .loginbox select {
     width: 90%;
   }
+}
+
+.td {
+  border: 0.5em;
 }
