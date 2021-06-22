@@ -5,6 +5,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -120,21 +121,6 @@ header {
   display: none;
 }
 
-.calender-container {
-  position: relative;
-  font-size: 1.75rem;
-}
-
-.calender {
-  position: absolute;
-  margin-left: 25%;
-  margin-top: 10%;
-}
-
-.months select {
-  width: 50%;
-}
-
 @media only screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -174,6 +160,89 @@ header {
   }
 }
 
-.td {
-  border: 0.5em;
+/* calendar styling*/
+
+.calender-container {
+  font-size: 1.5rem;
+  position: relative;
+  width: 50%;
+  
+}
+
+.calender {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 0;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 1em;
+  
+}
+
+span { 
+  border-radius: 1em;
+  color: black;
+}
+
+#month-list {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #eeeeee;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+#years {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #eeeeee;
+  font-size: 20px;
+}
+td {
+  padding: .1em;
+  border-radius: 1em;
+	border-color: rgb(37, 164, 175);
+  text-align: center;
+  background-color: rgb(69, 69, 250,0.2);
+}
+
+th {
+  text-decoration: underline;
+}
+
+span {
+  margin: .6em;
+}
+
+.cal-head {
+   font-size: 1.5em;
+   font-family: helvetica;
+   margin: .2em;
+   margin-bottom: 1em;
+   text-decoration: rgb(69, 69, 250,0.2) underline;
+}
+
+#month-list{
+  background-color: white;
+}
+
+#years{
+  background-color: white;
+}
+
+.days-row {
+  margin: .2em;
 }
