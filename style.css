@@ -121,68 +121,27 @@ header {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-    margin-top: 0;
-  }
-  .loginbox input {
-    width: 90%;
-  }
-
-  .loginbox button {
-    width: 90%;
-  }
-
-  .loginbox button a:hover {
-    color: white;
-  }
-
-  .loginbox select {
-    width: 90%;
-  }
-}
-
 /* calendar styling*/
 
 .calender-container {
   font-size: 1.5rem;
-  position: relative;
-  width: 50%;
-  
+  width: 475px;
+  height: 578px;
 }
 
 .calender {
-  position: absolute;
-  margin-left: 25%;
   margin-top: 0;
   background-color: white;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   border-radius: 6px;
   padding: 1em;
-  
 }
 
-span { 
+span {
   border-radius: 1em;
   color: black;
+  display: flex;
+  flex-direction: row;
 }
 
 #month-list {
@@ -211,12 +170,13 @@ span {
   background: #eeeeee;
   font-size: 20px;
 }
+
 td {
-  padding: .1em;
+  padding: 0.1em;
   border-radius: 1em;
-	border-color: rgb(37, 164, 175);
+  border-color: rgb(37, 164, 175);
   text-align: center;
-  background-color: rgb(69, 69, 250,0.2);
+  background-color: rgb(69, 69, 250, 0.2);
 }
 
 th {
@@ -224,25 +184,114 @@ th {
 }
 
 span {
-  margin: .6em;
+  margin: 0.6em;
 }
 
 .cal-head {
-   font-size: 1.5em;
-   font-family: helvetica;
-   margin: .2em;
-   margin-bottom: 1em;
-   text-decoration: rgb(69, 69, 250,0.2) underline;
+  font-size: 1.5em;
+  font-family: helvetica;
+  margin: 0.2em;
+  margin-bottom: 1em;
+  text-decoration: rgb(69, 69, 250, 0.2) underline;
 }
 
-#month-list{
+#month-list {
   background-color: white;
 }
 
-#years{
+#years {
   background-color: white;
 }
 
 .days-row {
-  margin: .2em;
+  margin: 0.2em;
+}
+
+.modal {
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 1em;
+  width: 475px;
+  height: 578px;
+  font-size: 1.5em;
+}
+#noearlier{
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+#nolater {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+#time-modal {
+  font-size: 1.1em;
+  font-family: helvetica;
+  margin: 0.2em;
+  margin-bottom: 1em;
+  text-decoration: rgb(69, 69, 250, 0.2) underline;
+}
+
+.save {
+background-color: rgb(69, 69, 250, 0.2);
+font-size: 1.5em;
+width: 30%;
+height: 40px;
+border: 1px solid #d7d7d7;
+border-radius: 6px;
+outline: none;
+margin: 1px;
+justify-content: center;
+margin: 0 5px;
+font-size: 20px;
+margin-bottom: 1em;
+}
+
+.dismiss {
+background-color: rgb(69, 69, 250, 0.2);
+font-size: 1.5em;
+width: 30%;
+height: 40px;
+border: 1px solid #d7d7d7;
+border-radius: 6px;
+outline: none;
+margin: 1px;
+justify-content: center;
+margin: 0 5px;
+font-size: 20px;
+margin-bottom: 1em;
+}
+
+#noearlierhead {
+  font-size: .8em;
+  margin-top: 3em;
+}
+
+#nolaterhead {
+  font-size: .8em;
+  margin-top: 2em;
+}
+
+.actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
 }
