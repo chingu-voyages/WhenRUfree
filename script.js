@@ -23,5 +23,3 @@ function closeFunction() {
   document.getElementById("back").style.display = "none";
   document.getElementById("calender").style.display = "block";
 }
-/* flip animation toggle
-Dismiss button returns to calender */
