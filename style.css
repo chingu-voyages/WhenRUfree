@@ -315,6 +315,58 @@ span {
   margin: 0.6em;
 }
 
+/* large calender */
+
+.big-calender-container {
+  width: 100%;
+}
+
+.big-calender {
+  width: 100%;
+}
+
+.big-months select {
+  width: 40%;
+  margin-right: auto;
+}
+
+.day-group {
+  width: 100%;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  width: 8em;
+  height: 5em;
+}
+
+.user-key {
+  border-radius: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+#purple {
+  background-color: purple;
+}
+#event-name {
+  font-size: 3em;
+}
+
 @media only screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -351,5 +403,26 @@ span {
 
   .loginbox select {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .days {
+    width: 4em;
+    height: 2em;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .days {
+    width: 2em;
+    height: 1em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .days {
+    width: 1.5em;
+    height: 1em;
   }
 }
