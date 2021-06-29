@@ -5,8 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About-WhenRUfree</title>
+    <img src="logo.png" alt="logo" class="logo" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <a href="index.html">Back Home</a>
+    <div class="calender-container" id="container">
+      <div class="calender" id="calender">
+        <div class="front" id="front">
+          <h1 class="cal-head">What days might work?</h1>
+          <div class="months">
+            <select id="month-list">
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <select id="years">
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+              <option>2031</option>
+            </select>
+          </div>
+          <table id="days">
+            <tr>
+              <th><span>S</span></th>
+              <th><span>M</span></th>
+              <th><span>T</span></th>
+              <th><span>W</span></th>
+              <th><span>T</span></th>
+              <th><span>F</span></th>
+              <th><span>S</span></th>
+            </tr>
+            <div class="days-row" id="days-row">
+              <tr>
+                <td>
+                  <button class="days" onclick="myFunction()">1</button>
+                </td>
+                <td><button class="days" onclick="myFunction()">2</button></td>
+                <td><button class="days" onclick="myFunction()">3</button></td>
+                <td><button class="days" onclick="myFunction()">4</button></td>
+                <td><button class="days" onclick="myFunction()">5</button></td>
+                <td><button class="days" onclick="myFunction()">6</button></td>
+                <td><button class="days" onclick="myFunction()">7</button></td>
+              </tr>
+              <tr>
+                <td><button class="days" onclick="myFunction()">8</button></td>
+                <td><button class="days" onclick="myFunction()">9</button></td>
+                <td><button class="days" onclick="myFunction()">10</button></td>
+                <td><button class="days" onclick="myFunction()">11</button></td>
+                <td><button class="days" onclick="myFunction()">12</button></td>
+                <td><button class="days" onclick="myFunction()">13</button></td>
+                <td><button class="days" onclick="myFunction()">14</button></td>
+              </tr>
+              <tr>
+                <td><button class="days" onclick="myFunction()">15</button></td>
+                <td><button class="days" onclick="myFunction()">16</button></td>
+                <td><button class="days" onclick="myFunction()">17</button></td>
+                <td><button class="days" onclick="myFunction()">18</button></td>
+                <td><button class="days" onclick="myFunction()">19</button></td>
+                <td><button class="days" onclick="myFunction()">20</button></td>
+                <td><button class="days" onclick="myFunction()">21</button></td>
+              </tr>
+              <tr>
+                <td><button class="days" onclick="myFunction()">22</button></td>
+                <td><button class="days" onclick="myFunction()">23</button></td>
+                <td><button class="days" onclick="myFunction()">24</button></td>
+                <td><button class="days" onclick="myFunction()">25</button></td>
+                <td><button class="days" onclick="myFunction()">26</button></td>
+                <td><button class="days" onclick="myFunction()">27</button></td>
+                <td><button class="days" onclick="myFunction()">28</button></td>
+              </tr>
+              <tr>
+                <td><button class="days" onclick="myFunction()">29</button></td>
+                <td><button class="days" onclick="myFunction()">29</button></td>
+                <td><button class="days" onclick="myFunction()">30</button></td>
+                <td><button class="days" onclick="myFunction()">31</button></td>
+              </tr>
+            </div>
+          </table>
+        </div>
+      </div>
+      <div class="modal" id="back">
+        <h1 id="time-modal">What times might work?</h1>
+        <h3 id="noearlierhead">No earlier than:</h3>
+        <select id="noearlier">
+          <option>12:00AM</option>
+          <option>1:00AM</option>
+          <option>2:00AM</option>
+          <option>3:00AM</option>
+          <option>4:00AM</option>
+          <option>5:00AM</option>
+          <option>6:00AM</option>
+          <option>7:00AM</option>
+          <option>8:00AM</option>
+          <option>9:00AM</option>
+          <option>10:00AM</option>
+          <option>11:00AM</option>
+          <option>12:00PM</option>
+          <option>1:00PM</option>
+          <option>2:00PM</option>
+          <option>3:00PM</option>
+          <option>4:00PM</option>
+          <option>5:00PM</option>
+          <option>6:00PM</option>
+          <option>7:00PM</option>
+          <option>8:00PM</option>
+          <option>9:00PM</option>
+          <option>10:00PM</option>
+          <option>11:00PM</option>
+          <option>12:00PM</option>
+        </select>
+        <h3 id="nolaterhead">No later than:</h3>
+        <select id="nolater">
+          <option>12:00AM</option>
+          <option>1:00AM</option>
+          <option>2:00AM</option>
+          <option>3:00AM</option>
+          <option>4:00AM</option>
+          <option>5:00AM</option>
+          <option>6:00AM</option>
+          <option>7:00AM</option>
+          <option>8:00AM</option>
+          <option>9:00AM</option>
+          <option>10:00AM</option>
+          <option>11:00AM</option>
+          <option>12:00PM</option>
+          <option>1:00PM</option>
+          <option>2:00PM</option>
+          <option>3:00PM</option>
+          <option>4:00PM</option>
+          <option>5:00PM</option>
+          <option>6:00PM</option>
+          <option>7:00PM</option>
+          <option>8:00PM</option>
+          <option>9:00PM</option>
+          <option>10:00PM</option>
+          <option>11:00PM</option>
+          <option>12:00PM</option>
+        </select>
+        <div class="actions">
+          <button class="save" id="save">
+            Save <i class="fasfa-check"></i>
+          </button>
+          <button class="dismiss" id="dismiss" onclick="closeFunction()">
+            Dismiss <i class="fasfa-times"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--<a href="index.html">Back Home</a>-->
+    <script src="script.js"></script>
   </body>
 </html>

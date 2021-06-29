@@ -5,6 +5,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -118,6 +119,200 @@ header {
 }
 .topnav .icon {
   display: none;
+}
+
+/* calendar styling*/
+
+.calender-container {
+  font-size: 1.5rem;
+  width: 30%;
+  height: 578px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calender {
+  margin-top: 0;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 1em;
+}
+
+span {
+  border-radius: 1em;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+#month-list {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #eeeeee;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+#years {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #eeeeee;
+  font-size: 20px;
+}
+
+td {
+  padding: 0.1em;
+  border-radius: 1em;
+  border-color: rgb(37, 164, 175);
+  text-align: center;
+  background-color: rgb(69, 69, 250, 0.2);
+}
+
+th {
+  text-decoration: underline;
+}
+
+span {
+  margin: 0.6em;
+}
+
+.cal-head {
+  font-size: 1.5em;
+  font-family: helvetica;
+  margin: 0.2em;
+  margin-bottom: 1em;
+  text-decoration: rgb(69, 69, 250, 0.2) underline;
+}
+
+#month-list {
+  background-color: white;
+}
+
+#years {
+  background-color: white;
+}
+
+.days-row {
+  margin: 0.2em;
+}
+
+.modal {
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 1em;
+  width: 100%;
+  height: 578px;
+  font-size: 1.5em;
+  /*transform: rotateY(180deg);*/
+  display: none;
+}
+#noearlier {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+#nolater {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+#time-modal {
+  font-size: 1.1em;
+  font-family: helvetica;
+  margin: 0.2em;
+  margin-bottom: 1em;
+  text-decoration: rgb(69, 69, 250, 0.2) underline;
+}
+
+.save {
+  background-color: rgb(69, 69, 250, 0.2);
+  font-size: 1.5em;
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.dismiss {
+  background-color: rgb(69, 69, 250, 0.2);
+  font-size: 1.5em;
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+#noearlierhead {
+  font-size: 0.8em;
+  margin-top: 3em;
+}
+
+#nolaterhead {
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/*.front {
+  transform: rotateY(0deg);
+}*/
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.days {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
 }
 
 @media only screen and (max-width: 1024px) {

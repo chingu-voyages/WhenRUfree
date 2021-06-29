@@ -6,3 +6,20 @@
     x.className = "topnav";
   }
 }
+
+function myFunction() {
+  if (document.getElementById("calender")) {
+    if (document.getElementById("calender").style.display == "none") {
+      document.getElementById("calender").style.display = "block";
+      document.getElementById("back").style.display = "none";
+    } else {
+      document.getElementById("calender").style.display = "none";
+      document.getElementById("back").style.display = "block";
+    }
+  }
+}
+
+function closeFunction() {
+  document.getElementById("back").style.display = "none";
+  document.getElementById("calender").style.display = "block";
+}
