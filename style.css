@@ -247,7 +247,8 @@ span {
   margin-bottom: 1em;
 }
 #time-modal {
-  font-size: 1.1em;
+  font-size: 1em;
+  color: green;
   font-family: helvetica;
   margin: 0.2em;
   margin-bottom: 1em;
@@ -308,13 +309,6 @@ span {
   transform: rotateY(180deg);
 }
 
-.days {
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  margin: 0.6em;
-}
-
 /* large calender */
 
 .big-calender-container {
@@ -322,30 +316,68 @@ span {
 }
 
 .big-calender {
-  width: 100%;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5em;
 }
 
 .big-months select {
-  width: 40%;
-  margin-right: auto;
+  width: 35%;
+  margin-left: 8em;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  background-color: lightgray;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .day-group {
   width: 100%;
 }
 
+.weekdays {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .days {
   display: flex;
   flex-direction: row;
-  width: 8em;
+  width: 7em;
   height: 5em;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
 .user-key {
   border-radius: 0.5em;
   width: 0.5em;
   height: 0.5em;
   display: inline-block;
+  margin-left: 10em;
+}
+
+.user-key-container {
+  margin-bottom: 3em;
+  background-color: lightgray;
+  width: 80%;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 #red {
@@ -365,6 +397,27 @@ span {
 }
 #event-name {
   font-size: 3em;
+  text-align: center;
+}
+
+#big-back {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#example {
+  margin-bottom: 2.5em;
+}
+
+.big-actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.modal h1 {
+  font-size: 1.75em;
+  color: green;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -411,18 +464,121 @@ span {
     width: 4em;
     height: 2em;
   }
+
+  .big-months select {
+    margin-left: 5em;
+  }
+
+  .user-key {
+    margin-left: 5em;
+  }
+
+  .modal h1 {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .days {
+    width: 2.25em;
+    height: 1em;
+  }
+
+  .user-key {
+    margin-left: 6.5em;
+  }
+
+  .big-months select {
+    margin-left: 3em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 411px) {
   .days {
-    width: 2em;
+    width: 1.5em;
     height: 1em;
+  }
+
+  .big-months select {
+    margin-left: 1.5em;
+    width: 40%;
+  }
+
+  .user-key {
+    margin-left: 4.5em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
   }
 }
 
 @media only screen and (max-width: 375px) {
   .days {
-    width: 1.5em;
+    width: 1.25em;
     height: 1em;
+  }
+
+  .user-key {
+    margin-left: 3.75em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  #big-back {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .days {
+    width: 0.75em;
+    height: 1em;
+  }
+
+  .user-key {
+    margin-left: 3.75em;
+  }
+
+  .big-months select {
+    width: 45%;
+    margin-left: 0.65em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  #big-back {
+    height: 600px;
   }
 }

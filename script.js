@@ -19,7 +19,24 @@ function myFunction() {
   }
 }
 
+function myFunction() {
+  if (document.getElementById("big-calender")) {
+    if (document.getElementById("big-calender").style.display == "none") {
+      document.getElementById("big-calender").style.display = "block";
+      document.getElementById("big-back").style.display = "none";
+    } else {
+      document.getElementById("big-calender").style.display = "none";
+      document.getElementById("big-back").style.display = "block";
+    }
+  }
+}
+
 function closeFunction() {
   document.getElementById("back").style.display = "none";
   document.getElementById("calender").style.display = "block";
+}
+
+function closeFunction() {
+  document.getElementById("big-back").style.display = "none";
+  document.getElementById("big-calender").style.display = "block";
 }
