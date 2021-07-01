@@ -420,6 +420,46 @@ table {
   color: green;
 }
 
+.icon-bar {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.email {
+  background-color: purple;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.discord {
+  background-color: lightgray;
+}
+
+.url {
+  text-align: right;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
 @media only screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -500,6 +540,12 @@ table {
   #nolater {
     width: 40%;
   }
+
+  .icon-bar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
 }
 
 @media only screen and (max-width: 411px) {
@@ -525,6 +571,12 @@ table {
   #nolater {
     margin: 0.25px 0 1px 0;
     width: 40%;
+  }
+
+  .icon-bar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
   }
 }
 
@@ -580,5 +632,10 @@ table {
 
   #big-back {
     height: 600px;
+  }
+  .icon-bar {
+    position: absolute;
+    top: 12%;
+    right: 2%;
   }
 }
