@@ -125,7 +125,7 @@ header {
 
 .calender-container {
   font-size: 1.5rem;
-  width: 30%;
+  width: 45%;
   height: 578px;
   margin-left: auto;
   margin-right: auto;
@@ -179,12 +179,11 @@ td {
   border-color: rgb(37, 164, 175);
   text-align: center;
   background-color: rgb(69, 69, 250, 0.2);
-}
 
+}
 th {
   text-decoration: underline;
 }
-
 span {
   margin: 0.6em;
 }
@@ -214,11 +213,13 @@ span {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   border-radius: 6px;
   padding: 1em;
-  width: 100%;
-  height: 578px;
+  width: 90%;
+  height: 520px;
   font-size: 1.5em;
   /*transform: rotateY(180deg);*/
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 #noearlier {
   width: 30%;
@@ -231,7 +232,7 @@ span {
   margin: 0 5px;
   background: #ffffff;
   font-size: 20px;
-  margin-bottom: 1em;
+  margin-bottom: .2em;
 }
 #nolater {
   width: 30%;
@@ -244,7 +245,7 @@ span {
   margin: 0 5px;
   background: #ffffff;
   font-size: 20px;
-  margin-bottom: 1em;
+  margin-bottom: .2em;
 }
 #time-modal {
   font-size: 1.1em;
@@ -286,7 +287,7 @@ span {
 
 #noearlierhead {
   font-size: 0.8em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 #nolaterhead {
@@ -313,6 +314,174 @@ span {
   border: none;
   font-size: 1em;
   margin: 0.6em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.user-key {
+  border-radius: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  margin-left: 10em;
+}
+
+.user-key-container {
+  margin-bottom: 3em;
+  background-color: lightgray;
+  width: 80%;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+#purple {
+  background-color: purple;
+}
+#event-name {
+  font-size: 3em;
+  text-align: center;
+}
+
+#big-back {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#example {
+  margin-bottom: 2.5em;
+}
+
+.big-actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.modal h1 {
+  font-size: 1.75em;
+  color:black;
+}
+
+.icon-bar {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.email {
+  background-color: purple;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.discord {
+  background-color: lightgray;
+}
+
+.url {
+  text-align: right;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
+#Eventname {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1em;
+  text-align: center;
+  background: #ffffff;
+  font-size: 20px;
+  position: relative;
+  left: 13em;
+
+}
+#Eventbtn {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1em;
+  text-align: center;
+  background: rgb(69, 69, 250, 0.6);
+  font-size: 20px;
+  position: relative;
+  left: 21em ;
+  margin-top: 1.5em ;
+}
+#Eventbtn:hover
+{
+ background-color:rgb(69, 69, 250);
+ transition: ease-in-out;
+ transition-duration: 120ms;
+}
+
+.days:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+ transition-duration: 120ms;
+}
+
+td:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+ transition-duration: 120ms;
+}
+@media only screen and (min-width: 2880px) {
+  #Eventname {
+    margin-left: 10em;
+  }
+  #Eventbtn {
+  margin-left: 10em;
+  }
+  #container{
+    margin-left: 20em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #Eventname {
+    margin-left: 4em;
+  }
+  #Eventbtn {
+  margin-left: 4em;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -352,4 +521,186 @@ span {
   .loginbox select {
     width: 90%;
   }
+.days{
+  width: 1em;
+  height: auto;
 }
+#Eventbtn {
+  margin-left: -3em;
+  margin-top: 3em;
+  }
+  #Eventname {
+    margin-left: -3em;
+  }
+  .calender-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .days {
+    width: 1em;
+    height: auto;
+  }
+
+  .big-months select {
+    margin-left: 5em;
+  }
+
+  .user-key {
+    margin-left: 5em;
+  }
+
+  .modal h1 {
+    font-size: 1.25em;
+  }
+#Eventname {
+  margin-left: -8em;
+}
+#Eventbtn {
+margin-left: -8em;
+}
+}
+
+@media only screen and (max-width: 540px) {
+  .days {
+    width: 2.25em;
+    height: 1em;
+  }
+  .calender-container {
+    margin: 0;
+    width: 120%;
+  }
+
+  .user-key {
+    margin-left: 6.5em;
+  }
+
+  .big-months select {
+    margin-left: 3em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    width: 40%;
+  }
+
+  .icon-bar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+}
+  @media only screen and (max-width: 411px) {
+    .days {
+      width: 1.5em;
+      height: 1em;
+    }
+  
+    .big-months select {
+      margin-left: 1.5em;
+      width: 40%;
+    }
+  
+    .user-key {
+      margin-left: 4.5em;
+    }
+  
+    #noearlier {
+      margin: 0.25px;
+      width: 40%;
+    }
+  
+    #nolater {
+      margin: 0.25px 0 1px 0;
+      width: 40%;
+    }
+  
+    .icon-bar {
+      position: absolute;
+      top: 10%;
+      right: 2%;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .days {
+      width: .2em;
+      height: auto;
+      margin-left: .05em;
+    }
+    .calender-container {
+      margin-left: 0;
+      width: 375px;
+      height:auto;
+    }
+  
+    .user-key {
+      margin-left: 3.75em;
+    }
+  
+    #noearlier {
+      margin: 0.25px;
+      width: 40%;
+    }
+  
+    #nolater {
+      margin: 0.25px 0 1px 0;
+      width: 40%;
+    }
+  
+    #big-back {
+      height: 600px;
+    }
+    #Eventname {
+      justify-content: left;
+      display: block;
+      margin-left: -8em;
+      width: 50%;
+    }
+    #Eventbtn {
+      justify-content: left;
+      display: block;
+      margin-left: -15em;
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .days {
+      width: 0.75em;
+      height: 1em;
+    }
+  
+    .user-key {
+      margin-left: 3.75em;
+    }
+  
+    .big-months select {
+      width: 45%;
+      margin-left: 0.65em;
+    }
+  
+    #noearlier {
+      margin: 0.25px;
+      width: 40%;
+    }
+  
+    #nolater {
+      margin: 0.25px 0 1px 0;
+      width: 40%;
+    }
+  
+    #big-back {
+      height: 600px;
+    }
+    .icon-bar {
+      position: absolute;
+      top: 12%;
+      right: 2%;
+    }
+  }
