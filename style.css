@@ -460,6 +460,71 @@ table {
   top: 0%;
   right: 2%;
 }
+
+#Eventname {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1em;
+  text-align: center;
+  background: #ffffff;
+  font-size: 20px;
+  position: relative;
+  left: 13em;
+}
+#Eventbtn {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1em;
+  text-align: center;
+  background: rgb(69, 69, 250, 0.6);
+  font-size: 20px;
+  position: relative;
+  left: 21em;
+  margin-top: 1.5em;
+}
+#Eventbtn:hover {
+  background-color: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+
+.days:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+
+td:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+@media only screen and (min-width: 2880px) {
+  #Eventname {
+    margin-left: 10em;
+  }
+  #Eventbtn {
+    margin-left: 10em;
+  }
+  #container {
+    margin-left: 20em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #Eventname {
+    margin-left: 4em;
+  }
+  #Eventbtn {
+    margin-left: 4em;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -516,12 +581,36 @@ table {
   .modal h1 {
     font-size: 1.25em;
   }
+
+  #Eventname {
+    margin-left: -8em;
+  }
+  #Eventbtn {
+    margin-left: -8em;
+  }
+
+  #Eventbtn {
+    margin-left: -3em;
+    margin-top: 3em;
+  }
+  #Eventname {
+    margin-left: -3em;
+  }
+
+  .calender-container {
+    width: 500px;
+  }
 }
 
 @media only screen and (max-width: 540px) {
   .days {
     width: 2.25em;
     height: 1em;
+  }
+
+  .calender-container {
+    margin: 0;
+    width: 120%;
   }
 
   .user-key {
@@ -586,6 +675,12 @@ table {
     height: 1em;
   }
 
+  .calender-container {
+    margin-left: 0;
+    width: 375px;
+    height: auto;
+  }
+
   .user-key {
     margin-left: 3.75em;
   }
@@ -602,6 +697,19 @@ table {
 
   #big-back {
     height: 600px;
+  }
+
+  #Eventname {
+    justify-content: left;
+    display: block;
+    margin-left: -8em;
+    width: 50%;
+  }
+  #Eventbtn {
+    justify-content: left;
+    display: block;
+    margin-left: -15em;
+    width: 50%;
   }
 }
 
