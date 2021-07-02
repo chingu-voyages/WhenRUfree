@@ -248,7 +248,8 @@ span {
   margin-bottom: .2em;
 }
 #time-modal {
-  font-size: 1.1em;
+  font-size: 1em;
+  color: green;
   font-family: helvetica;
   margin: 0.2em;
   margin-bottom: 1em;
@@ -309,7 +310,49 @@ span {
   transform: rotateY(180deg);
 }
 
+/* large calender */
+
+.big-calender-container {
+  width: 100%;
+}
+
+.big-calender {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5em;
+}
+
+.big-months select {
+  width: 35%;
+  margin-left: 8em;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  background-color: lightgray;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.day-group {
+  width: 100%;
+}
+
+.weekdays {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .days {
+  display: flex;
+  flex-direction: row;
+  width: 7em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   font-size: 1em;
@@ -375,7 +418,9 @@ table {
 
 .modal h1 {
   font-size: 1.75em;
-  color:black;
+  color: green;
+
+ 
 }
 
 .icon-bar {
@@ -418,6 +463,7 @@ table {
   top: 0%;
   right: 2%;
 }
+
 #Eventname {
   width: 30%;
   height: 50px;
@@ -430,7 +476,6 @@ table {
   font-size: 20px;
   position: relative;
   left: 13em;
-
 }
 #Eventbtn {
   width: 30%;
@@ -456,12 +501,15 @@ table {
 .days:hover {
   background: rgb(69, 69, 250);
   transition: ease-in-out;
+
  transition-duration: 120ms;
+
 }
 
 td:hover {
   background: rgb(69, 69, 250);
   transition: ease-in-out;
+
  transition-duration: 120ms;
 }
 @media only screen and (min-width: 2880px) {
@@ -480,7 +528,9 @@ td:hover {
     margin-left: 4em;
   }
   #Eventbtn {
+
   margin-left: 4em;
+
   }
 }
 
@@ -525,6 +575,12 @@ td:hover {
   width: 1em;
   height: auto;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .days {
+    width: 4em;
+    height: 2em;
 #Eventbtn {
   margin-left: -3em;
   margin-top: 3em;
@@ -534,13 +590,6 @@ td:hover {
   }
   .calender-container {
     width: 500px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .days {
-    width: 1em;
-    height: auto;
   }
 
   .big-months select {
@@ -554,6 +603,7 @@ td:hover {
   .modal h1 {
     font-size: 1.25em;
   }
+
 #Eventname {
   margin-left: -8em;
 }
@@ -595,6 +645,7 @@ margin-left: -8em;
     right: 2%;
   }
 }
+
   @media only screen and (max-width: 411px) {
     .days {
       width: 1.5em;
