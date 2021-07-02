@@ -52,9 +52,9 @@ header {
   border: 1px solid #d7d7d7;
   border-radius: 6px;
   outline: none;
-  margin: 1px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  margin: 0 5px;
   background: #eeeeee;
   font-size: 20px;
 }
@@ -65,9 +65,9 @@ header {
   border: 1px solid #d7d7d7;
   border-radius: 6px;
   outline: none;
-  margin: 1px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  margin: 0 5px;
   background: rgb(41, 186, 199);
   font-size: 20px;
   margin-bottom: 20px;
@@ -83,9 +83,9 @@ header {
   border: 1px solid #d7d7d7;
   border-radius: 6px;
   outline: none;
-  margin: 1px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
-  margin: 0 5px;
   background: #eeeeee;
   font-size: 20px;
 }
@@ -207,7 +207,7 @@ span {
   margin: 0.2em;
 }
 
-.modal {
+.modals {
   background-color: white;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   border-radius: 6px;
