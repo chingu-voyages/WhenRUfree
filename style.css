@@ -179,7 +179,6 @@ td {
   border-color: rgb(37, 164, 175);
   text-align: center;
   background-color: rgb(69, 69, 250, 0.2);
-
 }
 th {
   text-decoration: underline;
@@ -232,7 +231,7 @@ span {
   margin: 0 5px;
   background: #ffffff;
   font-size: 20px;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 #nolater {
   width: 30%;
@@ -245,7 +244,7 @@ span {
   margin: 0 5px;
   background: #ffffff;
   font-size: 20px;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 #time-modal {
   font-size: 1em;
@@ -349,6 +348,19 @@ span {
 .days {
   display: flex;
   flex-direction: row;
+  width: 1.5em;
+  height: 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
+}
+
+.days_big {
+  display: flex;
+  flex-direction: row;
   width: 7em;
   height: 5em;
   justify-content: center;
@@ -419,8 +431,6 @@ table {
 .modal h1 {
   font-size: 1.75em;
   color: green;
-
- 
 }
 
 .icon-bar {
@@ -488,38 +498,41 @@ table {
   background: rgb(69, 69, 250, 0.6);
   font-size: 20px;
   position: relative;
-  left: 21em ;
-  margin-top: 1.5em ;
+  left: 21em;
+  margin-top: 1.5em;
 }
-#Eventbtn:hover
-{
- background-color:rgb(69, 69, 250);
- transition: ease-in-out;
- transition-duration: 120ms;
+#Eventbtn:hover {
+  background-color: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
 }
 
 .days:hover {
   background: rgb(69, 69, 250);
   transition: ease-in-out;
+  transition-duration: 120ms;
+}
 
- transition-duration: 120ms;
-
+.days_big:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
 }
 
 td:hover {
   background: rgb(69, 69, 250);
   transition: ease-in-out;
-
- transition-duration: 120ms;
+  transition-duration: 120ms;
 }
+
 @media only screen and (min-width: 2880px) {
   #Eventname {
     margin-left: 10em;
   }
   #Eventbtn {
-  margin-left: 10em;
+    margin-left: 10em;
   }
-  #container{
+  #container {
     margin-left: 20em;
   }
 }
@@ -528,9 +541,7 @@ td:hover {
     margin-left: 4em;
   }
   #Eventbtn {
-
-  margin-left: 4em;
-
+    margin-left: 4em;
   }
 }
 
@@ -571,25 +582,31 @@ td:hover {
   .loginbox select {
     width: 90%;
   }
-.days{
-  width: 1em;
-  height: auto;
-}
-
-
-@media only screen and (max-width: 768px) {
   .days {
-    width: 4em;
-    height: 2em;
-#Eventbtn {
-  margin-left: -3em;
-  margin-top: 3em;
+    width: 1em;
+    height: auto;
+  }
+  #Eventbtn {
+    margin-left: -3em;
+    margin-top: 3em;
   }
   #Eventname {
     margin-left: -3em;
   }
   .calender-container {
     width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .days {
+    width: 1.25em;
+    height: 1em;
+  }
+
+  .days_big {
+    width: 4em;
+    height: 2em;
   }
 
   .big-months select {
@@ -604,16 +621,21 @@ td:hover {
     font-size: 1.25em;
   }
 
-#Eventname {
-  margin-left: -8em;
-}
-#Eventbtn {
-margin-left: -8em;
-}
+  #Eventname {
+    margin-left: -8em;
+  }
+  #Eventbtn {
+    margin-left: -8em;
+  }
 }
 
 @media only screen and (max-width: 540px) {
   .days {
+    width: 2.25em;
+    height: 1em;
+  }
+
+  .days_big {
     width: 2.25em;
     height: 1em;
   }
@@ -646,112 +668,126 @@ margin-left: -8em;
   }
 }
 
-  @media only screen and (max-width: 411px) {
-    .days {
-      width: 1.5em;
-      height: 1em;
-    }
-  
-    .big-months select {
-      margin-left: 1.5em;
-      width: 40%;
-    }
-  
-    .user-key {
-      margin-left: 4.5em;
-    }
-  
-    #noearlier {
-      margin: 0.25px;
-      width: 40%;
-    }
-  
-    #nolater {
-      margin: 0.25px 0 1px 0;
-      width: 40%;
-    }
-  
-    .icon-bar {
-      position: absolute;
-      top: 10%;
-      right: 2%;
-    }
+@media only screen and (max-width: 411px) {
+  .days {
+    width: 0.5em;
+    height: 0.5em;
   }
-  
-  @media only screen and (max-width: 375px) {
-    .days {
-      width: .2em;
-      height: auto;
-      margin-left: .05em;
-    }
-    .calender-container {
-      margin-left: 0;
-      width: 375px;
-      height:auto;
-    }
-  
-    .user-key {
-      margin-left: 3.75em;
-    }
-  
-    #noearlier {
-      margin: 0.25px;
-      width: 40%;
-    }
-  
-    #nolater {
-      margin: 0.25px 0 1px 0;
-      width: 40%;
-    }
-  
-    #big-back {
-      height: 600px;
-    }
-    #Eventname {
-      justify-content: left;
-      display: block;
-      margin-left: -8em;
-      width: 50%;
-    }
-    #Eventbtn {
-      justify-content: left;
-      display: block;
-      margin-left: -15em;
-      width: 50%;
-    }
+
+  .days_big {
+    width: 1.5em;
+    height: 1em;
   }
-  
-  @media only screen and (max-width: 360px) {
-    .days {
-      width: 0.75em;
-      height: 1em;
-    }
-  
-    .user-key {
-      margin-left: 3.75em;
-    }
-  
-    .big-months select {
-      width: 45%;
-      margin-left: 0.65em;
-    }
-  
-    #noearlier {
-      margin: 0.25px;
-      width: 40%;
-    }
-  
-    #nolater {
-      margin: 0.25px 0 1px 0;
-      width: 40%;
-    }
-  
-    #big-back {
-      height: 600px;
-    }
-    .icon-bar {
-      position: absolute;
-      top: 12%;
-      right: 2%;
-    }
+
+  .big-months select {
+    margin-left: 1.5em;
+    width: 40%;
   }
+
+  .user-key {
+    margin-left: 4.5em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  .icon-bar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .days {
+    width: 0.2em;
+    height: auto;
+    margin-left: 0.05em;
+  }
+
+  .days_big {
+    width: 0.2em;
+    height: auto;
+  }
+  .calender-container {
+    margin-left: 0;
+    width: 375px;
+    height: auto;
+  }
+
+  .user-key {
+    margin-left: 3.75em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  #big-back {
+    height: 600px;
+  }
+  #Eventname {
+    justify-content: left;
+    display: block;
+    margin-left: -8em;
+    width: 50%;
+  }
+  #Eventbtn {
+    justify-content: left;
+    display: block;
+    margin-left: -15em;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .days {
+    width: 0.75em;
+    height: 1em;
+  }
+
+  .days_big {
+    width: 0.75em;
+    height: 1em;
+  }
+
+  .user-key {
+    margin-left: 3.75em;
+  }
+
+  .big-months select {
+    width: 40%;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  #big-back {
+    height: 600px;
+  }
+  .icon-bar {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+  }
+}

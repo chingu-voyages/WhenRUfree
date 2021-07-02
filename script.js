@@ -7,7 +7,7 @@
   }
 }
 
-function myFunction() {
+function myFunction_1() {
   if (document.getElementById("calender")) {
     if (document.getElementById("calender").style.display == "none") {
       document.getElementById("calender").style.display = "block";
@@ -31,7 +31,7 @@ function myFunction() {
   }
 }
 
-function closeFunction() {
+function closeFunction_1() {
   document.getElementById("back").style.display = "none";
   document.getElementById("calender").style.display = "block";
 }
