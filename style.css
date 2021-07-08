@@ -17,7 +17,7 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
 }
 .loginbox {
   text-align: center;
@@ -98,6 +98,7 @@ header {
 .row {
   margin: 10px;
 }
+
 
 .topnav {
   overflow: hidden;
@@ -249,7 +250,7 @@ span {
 }
 #time-modal {
   font-size: 1em;
-  color: green;
+  color: rgb(54, 20, 94);
   font-family: helvetica;
   margin: 0.2em;
   margin-bottom: 1em;
@@ -473,11 +474,12 @@ table {
   width: 100%;
   text-align: center;
   margin-top: 0.5em;
+  
 }
 
 .modal h1 {
   font-size: 1.75em;
-  color: green;
+  color: green
 }
 
 .icon-bar {
@@ -550,6 +552,7 @@ table {
   position: relative;
   left: 21em;
   margin-top: 1.5em;
+  text-decoration: none;
 }
 #Eventbtn:hover {
   background-color: rgb(69, 69, 250);
@@ -686,7 +689,8 @@ td:hover {
     margin-left: 4em;
   }
   #Eventbtn {
-    margin-left: 4em;
+    margin-left: 5em;
+   
   }
 }
 
