@@ -12,34 +12,48 @@ header {
   color: navy;
 }
 
-#paoloCirc {
+.circPaolo {
   float: left;
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: #ff0000;
 }
-#ashleyCirc {
+.circAshley {
   float: left;
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: purple;
 }
-#hudaCirc {
+.circHuda {
   float: left;
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: blue;
 }
-#amberdeenCirc {
+.circAmberdeen {
   float: left;
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: green;
 }
+
+.circHidePaolo {
+  visibility: hidden;
+}
+.circHideAshley {
+  visibility: hidden;
+}
+.circHideHuda {
+  visibility: hidden;
+}
+.circHideAmberdeen {
+  visibility: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
