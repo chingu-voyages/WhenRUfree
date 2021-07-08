@@ -12,34 +12,6 @@ header {
   color: navy;
 }
 
-#paoloCirc {
-  float: left;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: #ff0000;
-}
-#ashleyCirc {
-  float: left;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: purple;
-}
-#hudaCirc {
-  float: left;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: blue;
-}
-#amberdeenCirc {
-  float: left;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: green;
-}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -340,6 +312,61 @@ span {
 
 /* large calender */
 
+
+.test {
+    position:relative;
+    transform:translateY(100%);
+    transform: rotate(-90deg);
+  
+}
+.circ {
+  margin: .2em;
+}
+#paoloCirc {
+  
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: #ff0000;
+  
+  
+}
+#ashleyCirc {
+  
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: purple;
+ 
+  
+}
+#hudaCirc {
+  
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: blue;
+
+}
+#amberdeenCirc {
+ 
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: green;
+  
+}
+.days_big {
+  width: 7em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
+}
+
 .big-calender-container {
   width: 100%;
 }
@@ -379,19 +406,6 @@ span {
   flex-direction: row;
   width: 1.5em;
   height: 1em;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  margin: 0.6em;
-}
-
-.days_big {
-  display: flex;
-  flex-direction: row;
-  width: 7em;
-  height: 5em;
   justify-content: center;
   align-items: center;
   background-color: transparent;
