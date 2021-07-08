@@ -525,6 +525,101 @@ td:hover {
   transition-duration: 120ms;
 }
 
+.modal-content {
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+#modal-logo {
+  width: 4em;
+  height: 4em;
+}
+
+#about-me-logo {
+  width: 6em;
+  height: 6em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-button {
+  border-radius: 100%;
+  background: transparent;
+  border: none;
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+}
+
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+
+.modal-body p {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.modal-body h2 {
+  text-align: center;
+  margin-top: 1em;
+  color: green;
+}
+
+.modal-body a {
+  color: black;
+  width: 100%;
+}
+
+.modal-body i {
+  font-size: 2.5em;
+  color: black;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+
+.modal-body ul {
+  display: flex;
+  flex-direction: row;
+}
+.modal-body li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+.modal-body label {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-close {
+  margin-top: 0.5em;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+#about-button {
+  animation: pulse 1s linear infinite;
+}
+
 @media only screen and (min-width: 2880px) {
   #Eventname {
     margin-left: 10em;
@@ -595,6 +690,16 @@ td:hover {
   }
   .calender-container {
     width: 500px;
+  }
+  .modal-body ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-body label {
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-left: 0.5em;
   }
 }
 
