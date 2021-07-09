@@ -12,6 +12,48 @@ header {
   color: navy;
 }
 
+.circPaolo {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: #ff0000;
+}
+.circAshley {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: purple;
+}
+.circHuda {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: blue;
+}
+.circAmberdeen {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: green;
+}
+
+.circHidePaolo {
+  visibility: hidden;
+}
+.circHideAshley {
+  visibility: hidden;
+}
+.circHideHuda {
+  visibility: hidden;
+}
+.circHideAmberdeen {
+  visibility: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -313,61 +355,6 @@ span {
 
 /* large calender */
 
-
-.test {
-    position:relative;
-    transform:translateY(100%);
-    transform: rotate(-90deg);
-  
-}
-.circ {
-  margin: .2em;
-}
-#paoloCirc {
-  
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: #ff0000;
-  
-  
-}
-#ashleyCirc {
-  
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: purple;
- 
-  
-}
-#hudaCirc {
-  
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: blue;
-
-}
-#amberdeenCirc {
- 
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
-  background-color: green;
-  
-}
-.days_big {
-  width: 7em;
-  height: 5em;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  margin: 0.6em;
-}
-
 .big-calender-container {
   width: 100%;
 }
@@ -383,14 +370,12 @@ span {
 
 .big-months select {
   width: 35%;
-  margin-left: 6em;
-  justify-content: space-evenly;
-  margin-bottom: 2em ;
+  margin-left: 8em;
   padding: 1em;
   font-size: 1em;
   font-weight: bold;
   border: none;
-  background-color: rgb(241, 241, 241);
+  background-color: lightgray;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
@@ -417,6 +402,19 @@ span {
   margin: 0.6em;
 }
 
+.days_big {
+  display: flex;
+  flex-direction: row;
+  width: 7em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
+}
+
 table {
   margin-left: auto;
   margin-right: auto;
@@ -431,9 +429,8 @@ table {
 
 .user-key-container {
   margin-bottom: 3em;
-  background-color: rgb(236, 236, 236);
+  background-color: lightgray;
   width: 80%;
-  padding: 1em;
   border-radius: 10px;
   margin-right: auto;
   margin-left: auto;
@@ -458,7 +455,6 @@ table {
 #event-name {
   font-size: 3em;
   text-align: center;
-  
 }
 
 #big-back {
@@ -486,9 +482,6 @@ table {
   position: absolute;
   top: 8%;
   right: 2%;
-  background-color: #eeeeee;
-  width: auto;
-  padding: .2em;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
