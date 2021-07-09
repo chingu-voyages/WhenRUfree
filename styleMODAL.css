@@ -1,196 +1,66 @@
-body {
-    /*background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(rgb(69, 69, 250), white);*/
-    background-color: #ffffff;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-  header {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    color: rgb(0, 0, 46);
-  }
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .logo {
-    float: left;
-    /*margin-left: 9em;*/
-  }
-  header::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  nav {
-    display: flex;
-  }
   
-  .nav-list {
-    flex-grow: 1;
-    flex-basis: 0;
-    list-style: none;
-    float: right;
-    text-align: center;
-    color: white;
-  }
-  .nav-button {
-    background-color: rgb(69, 69, 250, 0.1) ;
-    border: none;
-    height: 4em;
-    float: right;
-    margin-left: 1em ;
-    display: inline;
-    padding-left: 1em;
-  }
-  .nav-button:hover {
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgb(69, 69, 250), white);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  float: left;
+  /*margin-left: 9em;*/
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: navy;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
+  margin-top: 1.5rem;
+}
+
+.topnav a:hover {
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+nav a {
+  color: navy;
+  text-decoration: none;
+  font-size: 2em;
+  display: inline-block;
+}
+nav a:hover {
     transition: ease-in-out;
     transition-duration: 120ms;
-    color: rgb(69, 69, 250);
+    background-color: rgb(69, 69, 250); ;
   }
-  .nav-list a {
-    margin-right: 15px;
-  }
-  
-  .topnav label {
-    display: none;
-  }
-  
-  #hamburger {
-    display: none;
-  }
-  
-  nav a {
-    color: navy;
-    text-decoration: none;
-    font-size: 2em;
-    display: inline-block;
-  }
-  
-  nav a:hover {
-      transition: ease-in-out;
-      transition-duration: 120ms;
-      background-color: rgb(69, 69, 250); ;
-    }
 
-  .loginbox {
-    text-align: center;
-    background-color: rgb(69, 69, 250, 0.7);
-    width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-    border-radius: 6px;
-  }
-  
-  .loginbox h1 {
-    padding-top: 30px;
-    color: rgb(1, 0, 49);
-  }
-  
-  .loginbox p {
-    color: rgb(255, 255, 255);
-  }
-  
-  .heading {
-    line-height: 1;
-  }
-  
-  .loginbox form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .loginbox input {
-    width: 40%;
-    height: 40px;
-    border: 1px solid #ffffff;
-    border-radius: 6px;
-    outline: none;
-    margin: 1px;
-    text-align: center;
-    margin: 0 5px;
-    background: #ffffff;
-    font-size: 20px;
-  }
-  
-  .loginbox label {
-    font-size: 1.5rem;
-  }
-  
-  .loginbox select {
-    width: 30%;
-    height: 40px;
-    border: 1px solid #d7d7d7;
-    border-radius: 6px;
-    outline: none;
-    margin: 1px;
-    text-align: center;
-    margin: 0 5px;
-    background: #ffffff;
-    font-size: 20px;
-  }
-  
-  .loginbox option {
-    border-radius: 6px;
-  }
-  
-  .row {
-    margin: 10px;
-  }
-  
-  #fourth-row{
-    margin: 1.5em;
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .nav-list a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-    }
-  
-    .topnav label {
-      display: inline-block;
-      color: black;
-      background: transparent;
-      font-style: normal;
-      font-size: 1em;
-      padding: 10px;
-    }
-  
-    .nav-list a {
-      display: none;
-    }
-  
-    .topnav input:checked ~ .nav-list {
-      display: block;
-    }
-  
-    .topnav .loginbox {
-      width: 100%;
-    }
-    .loginbox input {
-      width: 90%;
-    }
-  
-    .loginbox button {
-      width: 90%;
-    }
-  
-    .loginbox select {
-      width: 90%;
-    }
-  }
+/*
 
 input[type=button] {
- width: 40%;
+  width: 40%;
     height: 35px;
     margin: 1px;
     text-align: center;
@@ -206,18 +76,172 @@ input[type=button] {
     color: navy;
     transition-duration: 250ms;
   }
-
-.topnav {
+  
+  .topnav {
   background-color:rgb(69, 69, 250, 0.7);
   width: 100%;
   margin-top: 0;
   margin-bottom: 4em;
   height: 3.5em;
-}
-
-.topnav a {
+  }
+  
+  .topnav a {
   float: right;
   color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
+  }
+*/
+nav {
+  display: flex;
+}
+
+.nav-list {
+  flex-grow: 1;
+  flex-basis: 0;
+  list-style: none;
+  float: right;
+  text-align: center;
+  color: white;
+}
+.nav-list a {
+  margin-right: 15px;
+}
+
+
+.topnav label {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+
+.loginbox {
+  text-align: center;
+  background-color: white;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+}
+
+.loginbox h1 {
+  padding-top: 30px;
+  margin-bottom: 0em;
+  color: rgb(1, 0, 49);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.loginbox p {
+  color: rgb(255, 255, 255);
+}
+
+.heading {
+  line-height: 1;
+}
+
+.loginbox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginbox input {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: #eeeeee;
+  font-size: 20px;
+}
+
+.loginbox label {
+  font-size: 1.5rem;
+}
+
+.loginbox select {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+}
+
+.loginbox option {
+  border-radius: 6px;
+}
+.loginbox h1 {
+  padding-top: 30px;
+  color: rgb(6, 67, 73);
+}
+.row {
+  margin: 10px;
+}
+
+#fourth-row{
+  margin: 1.5em;
+}
+input[type=button] {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: rgb(41, 186, 199);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .nav-list a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  .topnav label {
+    display: inline-block;
+    color: black;
+    background: transparent;
+    font-style: normal;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .nav-list a {
+    display: none;
+  }
+
+  .topnav input:checked ~ .nav-list {
+    display: block;
+  }
+
+  .topnav .loginbox {
+    width: 100%;
+  }
+  .loginbox input {
+    width: 90%;
+  }
+
+  .loginbox button {
+    width: 90%;
+  }
+
+  .loginbox select {
+    width: 90%;
+  }
 }
