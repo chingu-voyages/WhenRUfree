@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-WhenRUfree</title>
+    <img src="logo.png" alt="logo" class="logo" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h3 class="url">Send URL to Team:</h3>
+    <div class="icon-bar">
+      <a href ="mailto: abc@example.com" class="email"><i class="fa fa-envelope"></i></a>
+      <a href="www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="www.discord.com" class="discord"><i class="fab fa-discord"></i></a>
+    </div>
+    <div id="event-name">
+      <p>"Event Name"</p>
+    </div>
+    <div class="user-key-container">
+      <div class="user-key" id="red"></div>
+      <label>Paolo</label>
+      <div class="user-key" id="blue"></div>
+      <label>Huda</label>
+      <div class="user-key" id="purple"></div>
+      <label>Ashley</label>
+      <div class="user-key" id="green"></div>
+      <label>Ambareen</label>
+    </div>
+    <div class="big-calender-container" id="big-container">
+      <div class="big-calender" id="big-calender">
+        <div id="big-front" class="big-front">
+          <div class="big-months">
+            <select id="big-month-list">
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <select id="big-years">
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+              <option>2031</option>
+            </select>
+          </div>
+          <table id="big-days">
+            <tr>
+              <th><span class="weekdays">S</span></th>
+              <th><span class="weekdays">M</span></th>
+              <th><span class="weekdays">T</span></th>
+              <th><span class="weekdays">W</span></th>
+              <th><span class="weekdays">T</span></th>
+              <th><span class="weekdays">F</span></th>
+              <th><span class="weekdays">S</span></th>
+            </tr>
+            <!--<div class="days-row" id="days-row">-->
+            <tr class="day-group">
+              <td>
+                <div class="days_big" id="d1" onclick="myFunction()">
+                  1
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div>
+                </div>
+              </td>
+              <td><div class="days_big" id="d2" onclick="myFunction()">2
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d3" onclick="myFunction()">3
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d4" onclick="myFunction()">4
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d5" onclick="myFunction()">5
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div>
+              </div></td>
+              <td><div class="days_big" id="d6" onclick="myFunction()">6
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d7" onclick="myFunction()">7
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+            </tr>
+            <tr>
+              <td><div class="days_big" id="d8" onclick="myFunction()">8
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div>
+              </div></td>
+              <td><div class="days_big" id="d9" onclick="myFunction()">9
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d10" onclick="myFunction()">10
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d11" onclick="myFunction()">11
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d12" onclick="myFunction()">12
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d13" onclick="myFunction()">13
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d14" onclick="myFunction()">14 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+            </tr>
+            <tr > 
+              <td><div class="days_big" id="d15" onclick="myFunction()">15
+                <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div></td>
+              <td><div class="days_big" id="d16" onclick="myFunction()">16 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d17" onclick="myFunction()">17 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d18" onclick="myFunction()">18 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d19" onclick="myFunction()">19 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d20" onclick="myFunction()">20 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d21" onclick="myFunction()">21 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+            </tr>
+            <tr>
+              <td><div class="days_big" id="d22" onclick="myFunction()">22 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d23" onclick="myFunction()">23 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d24" onclick="myFunction()">24 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d25" onclick="myFunction()">25 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d26" onclick="myFunction()">26 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d27" onclick="myFunction()">27 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              <td><div class="days_big" id="d28" onclick="myFunction()">28 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+            </tr>
+            <tr>
+              <td><div class="d29 days_big" id="d29" onclick="myFunction()">29 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div></div></td>
+              
+              <td><div class="days_big" id="d30" onclick="myFunction()">30 <div class="test">
+                <div class="circ" id="paoloCirc"></div>
+                <div class="circ" id="ashleyCirc"></div>
+                <div class="circ" id="hudaCirc"></div>
+                <div class="circ" id="amberdeenCirc"></div>
+              </div>
+              </div>
+              </td>
+              <td>
+                <div class="days_big" id="d31" onclick="myFunction()">31 <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div>
+              </td>
+              <td>
+                <div class="days_big" id="d32" onclick="myFunction()">32 <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div>
+              </td>
+              <td>
+                <div class="days_big" id="d33" onclick="myFunction()">33 <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div>
+              </td>
+              <td>
+                <div class="days_big" id="d34" onclick="myFunction()">34 <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div>
+              </td>
+              <td>
+                <div class="days_big" id="d35" onclick="myFunction()">35  <div class="test">
+                  <div class="circ" id="paoloCirc"></div>
+                  <div class="circ" id="ashleyCirc"></div>
+                  <div class="circ" id="hudaCirc"></div>
+                  <div class="circ" id="amberdeenCirc"></div>
+                </div></div>
+              </td>
+              
+            </tr>
+            <!--</div>-->
+          </table>
+        </div>
+      </div>
+      <div class="modals" id="big-back">
+        <h1 id="user-availability">Team Member's Availability</h1>
+        <p id="example">Paolo 11:00 AM - 2:00PM EST</p>
+        <h2 id="time-modal">What times might work for you?</h1>
+        <h3 id="noearlierhead">No earlier than:</h3>
+        <select id="noearlier">
+          <option>12:00AM</option>
+          <option>1:00AM</option>
+          <option>2:00AM</option>
+          <option>3:00AM</option>
+          <option>4:00AM</option>
+          <option>5:00AM</option>
+          <option>6:00AM</option>
+          <option>7:00AM</option>
+          <option>8:00AM</option>
+          <option>9:00AM</option>
+          <option>10:00AM</option>
+          <option>11:00AM</option>
+          <option>12:00PM</option>
+          <option>1:00PM</option>
+          <option>2:00PM</option>
+          <option>3:00PM</option>
+          <option>4:00PM</option>
+          <option>5:00PM</option>
+          <option>6:00PM</option>
+          <option>7:00PM</option>
+          <option>8:00PM</option>
+          <option>9:00PM</option>
+          <option>10:00PM</option>
+          <option>11:00PM</option>
+          <option>12:00PM</option>
+        </select>
+        <h3 id="nolaterhead">No later than:</h3>
+        <select id="nolater">
+          <option>12:00AM</option>
+          <option>1:00AM</option>
+          <option>2:00AM</option>
+          <option>3:00AM</option>
+          <option>4:00AM</option>
+          <option>5:00AM</option>
+          <option>6:00AM</option>
+          <option>7:00AM</option>
+          <option>8:00AM</option>
+          <option>9:00AM</option>
+          <option>10:00AM</option>
+          <option>11:00AM</option>
+          <option>12:00PM</option>
+          <option>1:00PM</option>
+          <option>2:00PM</option>
+          <option>3:00PM</option>
+          <option>4:00PM</option>
+          <option>5:00PM</option>
+          <option>6:00PM</option>
+          <option>7:00PM</option>
+          <option>8:00PM</option>
+          <option>9:00PM</option>
+          <option>10:00PM</option>
+          <option>11:00PM</option>
+          <option>12:00PM</option>
+        </select>
+        <div class="big-actions">
+          <div class="save" id="save">
+            Save <i class="fasfa-check"></i>
+          </div>
+          <div class="dismiss" id="dismiss" onclick="closeFunction()">
+            Dismiss <i class="fasfa-times"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
