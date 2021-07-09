@@ -1,65 +1,87 @@
-﻿body {
+body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
+
 header {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   color: navy;
 }
+
+.circPaolo {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: #ff0000;
+}
+.circAshley {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: purple;
+}
+.circHuda {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: blue;
+}
+.circAmberdeen {
+  float: left;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: green;
+}
+
+.circHidePaolo {
+  visibility: hidden;
+}
+.circHideAshley {
+  visibility: hidden;
+}
+.circHideHuda {
+  visibility: hidden;
+}
+.circHideAmberdeen {
+  visibility: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.logo {
-  float: left;
-  /*margin-left: 9em;*/
-}
-header::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-nav ul {
-  margin: 0;
-  padding-right: 5em;
-  list-style: none;
-  float: right;
-}
-nav li {
-  display: inline-block;
-  margin-left: 40px;
-  padding-top: 50px;
 
-  position: relative;
 }
-nav a {
-  color: navy;
-  text-decoration: none;
-  font-size: 2em;
-}
-
-nav a:hover {
-  color: white;
-  transition: 250ms;
-}
-nav a::before {
-  height: 1em;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-}
-nav a:hover::before {
-  width: 100%;
-}
-
 .loginbox {
   text-align: center;
+  background-color: white;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+}
+
+.loginbox h1 {
+  padding-top: 30px;
+  color: rgb(6, 67, 73);
+}
+
+.loginbox p {
+  color: rgb(41, 186, 199);
+}
+
+.heading {
+  line-height: 1;
 }
 
 .loginbox form {
@@ -67,6 +89,857 @@ nav a:hover::before {
   flex-direction: column;
 }
 
+.loginbox input {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: #eeeeee;
+  font-size: 20px;
+}
+
+.loginbox button {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: rgb(41, 186, 199);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.loginbox label {
+  font-size: 1.5rem;
+}
+
+.loginbox select {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: #eeeeee;
+  font-size: 20px;
+}
+
+.loginbox option {
+  border-radius: 6px;
+}
+
 .row {
   margin: 10px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: navy;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
+  margin-top: 1.5rem;
+}
+
+.topnav a:hover {
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+/* calendar styling*/
+
+.calender-container {
+  font-size: 1.5rem;
+  width: 45%;
+  height: 578px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calender {
+  margin-top: 0;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 1em;
+}
+
+span {
+  border-radius: 1em;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+#month-list {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #eeeeee;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+#years {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #eeeeee;
+  font-size: 20px;
+}
+
+td {
+  padding: 0.1em;
+  border-radius: 1em;
+  border-color: rgb(37, 164, 175);
+  text-align: center;
+  background-color: rgb(69, 69, 250, 0.2);
+}
+th {
+  text-decoration: underline;
+}
+span {
+  margin: 0.6em;
+}
+
+.cal-head {
+  font-size: 1.5em;
+  font-family: helvetica;
+  margin: 0.2em;
+  margin-bottom: 1em;
+  text-decoration: rgb(69, 69, 250, 0.2) underline;
+}
+
+#month-list {
+  background-color: white;
+}
+
+#years {
+  background-color: white;
+}
+
+.days-row {
+  margin: 0.2em;
+}
+
+.modals {
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 1em;
+  width: 90%;
+  height: 520px;
+  font-size: 1.5em;
+  /*transform: rotateY(180deg);*/
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#noearlier {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+  margin-bottom: 0.2em;
+}
+#nolater {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  text-align: center;
+  margin: 0 5px;
+  background: #ffffff;
+  font-size: 20px;
+  margin-bottom: 0.2em;
+}
+#time-modal {
+  font-size: 1em;
+  color: rgb(54, 20, 94);
+  font-family: helvetica;
+  margin: 0.2em;
+  margin-bottom: 1em;
+  text-decoration: rgb(69, 69, 250, 0.2) underline;
+}
+
+.save {
+  background-color: rgb(69, 69, 250, 0.2);
+  font-size: 1.5em;
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.dismiss {
+  background-color: rgb(69, 69, 250, 0.2);
+  font-size: 1.5em;
+  width: 30%;
+  height: 40px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1px;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+#noearlierhead {
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+#nolaterhead {
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/*.front {
+  transform: rotateY(0deg);
+}*/
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* large calender */
+
+.big-calender-container {
+  width: 100%;
+}
+
+.big-calender {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5em;
+}
+
+.big-months select {
+  width: 35%;
+  margin-left: 8em;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  background-color: lightgray;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.day-group {
+  width: 100%;
+}
+
+.weekdays {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  width: 1.5em;
+  height: 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
+}
+
+.days_big {
+  display: flex;
+  flex-direction: row;
+  width: 7em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.user-key {
+  border-radius: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  margin-left: 10em;
+}
+
+.user-key-container {
+  margin-bottom: 3em;
+  background-color: lightgray;
+  width: 80%;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+#purple {
+  background-color: purple;
+}
+#event-name {
+  font-size: 3em;
+  text-align: center;
+}
+
+#big-back {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#example {
+  margin-bottom: 2.5em;
+}
+
+.big-actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5em;
+  
+}
+
+.modal h1 {
+  font-size: 1.75em;
+  color: green
+}
+
+.icon-bar {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.email {
+  background-color: purple;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.discord {
+  background-color: lightgray;
+}
+
+.url {
+  text-align: right;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
+
+#Eventname {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1em;
+  text-align: center;
+  background: #ffffff;
+  font-size: 20px;
+  position: relative;
+  left: 13em;
+}
+#Eventbtn {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  outline: none;
+  margin: 1em;
+  text-align: center;
+  background: rgb(69, 69, 250, 0.6);
+  font-size: 20px;
+  position: relative;
+  left: 21em;
+  margin-top: 1.5em;
+  text-decoration: none;
+}
+#Eventbtn:hover {
+  background-color: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+
+.days:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+
+.days_big:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+
+td:hover {
+  background: rgb(69, 69, 250);
+  transition: ease-in-out;
+  transition-duration: 120ms;
+}
+
+.modal-content {
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+#modal-logo {
+  width: 4em;
+  height: 4em;
+}
+
+#about-me-logo {
+  width: 6em;
+  height: 6em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-button {
+  border-radius: 100%;
+  background: transparent;
+  border: none;
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+}
+
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+
+.modal-body p {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.modal-body h2 {
+  text-align: center;
+  margin-top: 1em;
+  color: green;
+}
+
+.modal-body a {
+  color: black;
+  width: 100%;
+}
+
+.modal-body i {
+  font-size: 2.5em;
+  color: black;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+
+.modal-body ul {
+  display: flex;
+  flex-direction: row;
+}
+.modal-body li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+.modal-body label {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-close {
+  margin-top: 0.5em;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+#about-button {
+  animation: pulse 1s linear infinite;
+}
+
+@media only screen and (min-width: 2880px) {
+  #Eventname {
+    margin-left: 10em;
+  }
+  #Eventbtn {
+    margin-left: 10em;
+  }
+  #container {
+    margin-left: 20em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #Eventname {
+    margin-left: 4em;
+  }
+  #Eventbtn {
+    margin-left: 5em;
+   
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    margin-top: 0;
+  }
+  .loginbox input {
+    width: 90%;
+  }
+
+  .loginbox button {
+    width: 90%;
+  }
+
+  .loginbox button a:hover {
+    color: white;
+  }
+
+  .loginbox select {
+    width: 90%;
+  }
+  .days {
+    width: 1em;
+    height: auto;
+  }
+  #Eventbtn {
+    margin-left: -3em;
+    margin-top: 3em;
+  }
+  #Eventname {
+    margin-left: -3em;
+  }
+  .calender-container {
+    width: 500px;
+  }
+  .modal-body ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-body label {
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-left: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .days {
+    width: 1.25em;
+    height: 1em;
+  }
+
+  .days_big {
+    width: 4em;
+    height: 2em;
+  }
+
+  .big-months select {
+    margin-left: 5em;
+  }
+
+  .user-key {
+    margin-left: 5em;
+  }
+
+  .modal h1 {
+    font-size: 1.25em;
+  }
+
+  #Eventname {
+    margin-left: -8em;
+  }
+  #Eventbtn {
+    margin-left: -8em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .days {
+    width: 2.25em;
+    height: 1em;
+  }
+
+  .days_big {
+    width: 2.25em;
+    height: 1em;
+  }
+  .calender-container {
+    margin: 0;
+    width: 120%;
+  }
+
+  .user-key {
+    margin-left: 6.5em;
+  }
+
+  .big-months select {
+    margin-left: 3em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    width: 40%;
+  }
+
+  .icon-bar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .days {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  .days_big {
+    width: 1.5em;
+    height: 1em;
+  }
+
+  .big-months select {
+    margin-left: 1.5em;
+    width: 40%;
+  }
+
+  .user-key {
+    margin-left: 4.5em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  .icon-bar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .days {
+    width: 0.2em;
+    height: auto;
+    margin-left: 0.05em;
+  }
+
+  .days_big {
+    width: 0.2em;
+    height: auto;
+  }
+  .calender-container {
+    margin-left: 0;
+    width: 375px;
+    height: auto;
+  }
+
+  .user-key {
+    margin-left: 3.75em;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  #big-back {
+    height: 600px;
+  }
+  #Eventname {
+    justify-content: left;
+    display: block;
+    margin-left: -8em;
+    width: 50%;
+  }
+  #Eventbtn {
+    justify-content: left;
+    display: block;
+    margin-left: -15em;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .days {
+    width: 0.75em;
+    height: 1em;
+  }
+
+  .days_big {
+    width: 0.75em;
+    height: 1em;
+  }
+
+  .user-key {
+    margin-left: 3.75em;
+  }
+
+  .big-months select {
+    width: 40%;
+  }
+
+  #noearlier {
+    margin: 0.25px;
+    width: 40%;
+  }
+
+  #nolater {
+    margin: 0.25px 0 1px 0;
+    width: 40%;
+  }
+
+  #big-back {
+    height: 600px;
+  }
+  .icon-bar {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+  }
 }
