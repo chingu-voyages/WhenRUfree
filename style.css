@@ -11,30 +11,39 @@ header {
     'Lucida Sans', Arial, sans-serif;
   color: navy;
 }
+.test {
+  position:relative;
+  transform:translateY(-100%);
+  transform: rotate(-90deg);
 
-.circPaolo {
-  float: left;
+}
+.circ {
+margin: .2em;
+}
+
+#circPaolo {
+ 
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: #ff0000;
 }
-.circAshley {
-  float: left;
+#circAshley {
+  
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: purple;
 }
-.circHuda {
-  float: left;
+#circHuda {
+  
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: blue;
 }
-.circAmberdeen {
-  float: left;
+#circAmberdeen {
+  
   border-radius: 50%;
   height: 5px;
   width: 5px;
@@ -59,6 +68,7 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  
 
 }
 .loginbox {
@@ -370,12 +380,14 @@ span {
 
 .big-months select {
   width: 35%;
-  margin-left: 8em;
+  margin-left: 6em;
+  justify-content: space-evenly;
+  margin-bottom: 2em ;
   padding: 1em;
   font-size: 1em;
   font-weight: bold;
   border: none;
-  background-color: lightgray;
+  background-color: rgb(241, 241, 241);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
@@ -403,8 +415,7 @@ span {
 }
 
 .days_big {
-  display: flex;
-  flex-direction: row;
+
   width: 7em;
   height: 5em;
   justify-content: center;
@@ -429,8 +440,9 @@ table {
 
 .user-key-container {
   margin-bottom: 3em;
-  background-color: lightgray;
+  background-color: rgb(236, 236, 236);
   width: 80%;
+  padding: 1em;
   border-radius: 10px;
   margin-right: auto;
   margin-left: auto;
@@ -480,6 +492,9 @@ table {
 
 .icon-bar {
   position: absolute;
+  background-color: #eeeeee;
+  width: auto;
+  padding: .2em;
   top: 8%;
   right: 2%;
   -webkit-transform: translateY(-50%);
