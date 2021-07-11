@@ -2,13 +2,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: navy;
 }
 
@@ -59,7 +59,6 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-
 }
 .loginbox {
   text-align: center;
@@ -140,7 +139,6 @@ header {
 .row {
   margin: 10px;
 }
-
 
 .topnav {
   overflow: hidden;
@@ -459,6 +457,7 @@ table {
 
 #big-back {
   width: 80%;
+  padding-bottom: 5em;
   margin-right: auto;
   margin-left: auto;
 }
@@ -470,12 +469,18 @@ table {
   width: 100%;
   text-align: center;
   margin-top: 0.5em;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.modal h1 {
+.big-actions div {
+  padding-top: 10px;
+}
+
+.big-actions .modal h1 {
   font-size: 1.75em;
-  color: green
+  color: green;
 }
 
 .icon-bar {
@@ -645,8 +650,23 @@ td:hover {
   color: black;
 }
 
+.modal-body video {
+  display: block;
+  margin: 0 auto;
+}
+
 .btn-close {
   margin-top: 0.5em;
+}
+
+.sign-up-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.sign-up-link:hover {
+  color: black;
 }
 
 @keyframes pulse {
@@ -665,7 +685,6 @@ td:hover {
 #about-button {
   animation: pulse 1s linear infinite;
 }
-
 @media only screen and (min-width: 2880px) {
   #Eventname {
     margin-left: 10em;
@@ -683,7 +702,6 @@ td:hover {
   }
   #Eventbtn {
     margin-left: 5em;
-   
   }
 }
 
@@ -854,6 +872,9 @@ td:hover {
     position: absolute;
     top: 10%;
     right: 2%;
+  }
+  #big-back {
+    height: 80%;
   }
 }
 
