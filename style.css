@@ -1,4 +1,4 @@
-body {
+﻿body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
@@ -64,6 +64,7 @@ header {
   text-align: center;
   background-color: white;
   width: 75%;
+  margin-top: 2em;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
@@ -145,15 +146,20 @@ header {
   background-color: transparent;
 }
 
-.topnav a {
-  float: right;
+#myLinks {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: block;
-  color: navy;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 2em;
-  margin-top: 1.5rem;
+  margin-top: 1.25em;
+}
+
+#myLinks a {
+  color: navy;
+  text-decoration: none;
 }
 
 .topnav a:hover {
@@ -706,7 +712,42 @@ td:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-  .topnav a:not(:first-child) {
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 3em;
+  }
+
+  .topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.75em;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1em;
+    font-size: 2em;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  /*.topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
@@ -726,7 +767,7 @@ td:hover {
     display: block;
     text-align: right;
     margin-top: 0;
-  }
+  }*/
   .loginbox input {
     width: 90%;
   }
