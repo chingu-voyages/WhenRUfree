@@ -25,13 +25,15 @@
   </head>
 
   <header>
-    <div class="topnav" id="myTopnav">
+    <div class="topnav">
       <img src="logo.png" alt="logo" class="logo" />
-      <a href="login.html" class="active">Login</a>
-      <a href="index.html">Sign Up</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+      <div id="myLinks">
+        <a href="login.html" class="active">Login</a>
+        <a href="index.html">Sign Up</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction_3()">
+        <i class="fa fa-bars"></i
+      ></a>
     </div>
   </header>
   <body>
@@ -59,7 +61,7 @@
           </select>
         </div>
         <div id="fourth-row" class="row">
-          <button>Sign Up</button>
+          <button><a class="sign-up-link" href="about.html">Sign Up</a></button>
         </div>
       </form>
     </div>
@@ -80,7 +82,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
 
@@ -112,6 +114,10 @@
           team. WhenRUFree allows people across all different devices and
           timezones to coordinate and effectively schedule critical meetings.
         </p>
+        <video width="400" controls>
+          <source src="about us video.mp4" type="video/mp4" />
+          Your browser does not support HTML video
+        </video>
         <h2>Meet the Team</h2>
         <ul>
           <li>
