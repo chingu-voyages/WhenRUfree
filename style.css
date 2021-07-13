@@ -2,57 +2,52 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: navy;
 }
 .test {
-  position:relative;
-  transform:translateY(-100%);
+  position: relative;
+  transform: translateY(-100%);
   transform: rotate(-90deg);
 }
 .circDown {
   position: relative;
   display: inline-flex;
   flex-direction: row;
-  padding-top: 80px;
+  padding-top: 50px;
 }
-
 .circPaolo {
   float: left;
 }
 .circ {
-margin: .2em;
+  margin: 0.2em;
 }
 
-#circPaolo {
- 
+.circPaolo {
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: #ff0000;
 }
-#circAshley {
-  
+.circAshley {
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: purple;
 }
-#circHuda {
-  
+.circHuda {
   border-radius: 50%;
   height: 5px;
   width: 5px;
   background-color: blue;
 }
-#circAmberdeen {
-  
+.circAmberdeen {
   border-radius: 50%;
   height: 5px;
   width: 5px;
@@ -77,11 +72,6 @@ margin: .2em;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-=======
-  
-
->>>>>>> e894d2ac7651da35ce7281c34810b1e963c8338a
 }
 .loginbox {
   text-align: center;
@@ -393,7 +383,7 @@ span {
   width: 35%;
   margin-left: 6em;
   justify-content: space-evenly;
-  margin-bottom: 2em ;
+  margin-bottom: 2em;
   padding: 1em;
   font-size: 1em;
   font-weight: bold;
@@ -426,7 +416,6 @@ span {
 }
 
 .days_big {
-
   width: 7em;
   height: 5em;
   justify-content: center;
@@ -504,7 +493,7 @@ table {
   position: absolute;
   background-color: #eeeeee;
   width: auto;
-  padding: .2em;
+  padding: 0.2em;
   top: 8%;
   right: 2%;
   -webkit-transform: translateY(-50%);
