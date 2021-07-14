@@ -10,6 +10,7 @@ const ashleyAvail = document.querySelectorAll('.circAshley')
 const ctrlBtnAmberdeen = document.querySelector('.ctrlBtnAmberdeen')
 const amberdeenAvail = document.querySelectorAll('.circAmberdeen')
 const monthSel = document.querySelector('.monthSel')
+const offMonthList = document.getElementsByClassName('days_big_off_month')
 
 // login functionality 👇
 function check(form) {
@@ -29,6 +30,12 @@ function check(form) {
 // days.forEach((day) => {
 //   console.log(day.innerHTML)
 // })
+
+// function clearMonth() {
+//   offMonthList.forEach((e) => {
+//     e.classList.remove('days_big_off_month')
+//   })
+// }
 
 ctrlBtnPaolo.addEventListener('click', () => {
   paoloAvail.forEach((day) => {
