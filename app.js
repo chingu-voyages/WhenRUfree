@@ -57,10 +57,26 @@ ctrlBtnAmberdeen.addEventListener('click', () => {
 monthSel.addEventListener('change', () => {
   if (monthSel.value === 'January') {
     document.querySelector('#d1').innerHTML = '27'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d2').innerHTML = '28'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '29'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d4').innerHTML = '30'
+    document
+      .getElementById('d4')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d5').innerHTML = '31'
+    document
+      .getElementById('d5')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d6').innerHTML = '1'
     document.querySelector('#d7').innerHTML = '2'
     document.querySelector('#d8').innerHTML = '3'
@@ -93,13 +109,34 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d35').innerHTML = '30'
     document.querySelector('#d36').innerHTML = '31'
     document.querySelector('#d37').innerHTML = '1'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '2'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '3'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '4'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '5'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '6'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'February') {
     document.querySelector('#d1').innerHTML = '31'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '1'
     document.querySelector('#d3').innerHTML = '2'
     document.querySelector('#d4').innerHTML = '3'
@@ -129,20 +166,72 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d28').innerHTML = '27'
     document.querySelector('#d29').innerHTML = '28'
     document.querySelector('#d30').innerHTML = '1'
+    document
+      .getElementById('d30')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d31').innerHTML = '2'
+    document
+      .getElementById('d31')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d32').innerHTML = '3'
+    document
+      .getElementById('d32')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d33').innerHTML = '4'
+    document
+      .getElementById('d33')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d34').innerHTML = '5'
+    document
+      .getElementById('d34')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d35').innerHTML = '6'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d36').innerHTML = '7'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d37').innerHTML = '8'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d38').innerHTML = '9'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d39').innerHTML = '10'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d40').innerHTML = '11'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d41').innerHTML = '12'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d42').innerHTML = '13'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'March') {
     document.querySelector('#d1').innerHTML = '28'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '1'
     document.querySelector('#d3').innerHTML = '2'
     document.querySelector('#d4').innerHTML = '3'
@@ -174,21 +263,66 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d30').innerHTML = '29'
     document.querySelector('#d31').innerHTML = '30'
     document.querySelector('#d32').innerHTML = '31'
+    document
+      .getElementById('d32')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d33').innerHTML = '1'
+    document
+      .getElementById('d33')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d34').innerHTML = '2'
+    document
+      .getElementById('d34')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d35').innerHTML = '3'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = '4'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = '5'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '6'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '7'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '8'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '9'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '10'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'April') {
     document.querySelector('#d1').innerHTML = '28'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '29'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '30'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d4').innerHTML = '31'
+    document
+      .getElementById('d4')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d5').innerHTML = '1'
     document.querySelector('#d6').innerHTML = '2'
     document.querySelector('#d7').innerHTML = '3'
@@ -219,21 +353,64 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d32').innerHTML = '28'
     document.querySelector('#d33').innerHTML = '29'
     document.querySelector('#d34').innerHTML = '30'
+
     document.querySelector('#d35').innerHTML = '1'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = '2'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = '3'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '4'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '5'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '6'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '7'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '8'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'May') {
     document.querySelector('#d1').innerHTML = '25'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '26'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '27'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d4').innerHTML = '28'
+    document
+      .getElementById('d4')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d5').innerHTML = '29'
+    document
+      .getElementById('d5')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d6').innerHTML = '30'
+    document
+      .getElementById('d6')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d7').innerHTML = '1'
     document.querySelector('#d8').innerHTML = '2'
     document.querySelector('#d9').innerHTML = '3'
@@ -266,13 +443,34 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d36').innerHTML = '30'
     document.querySelector('#d37').innerHTML = '31'
     document.querySelector('#d38').innerHTML = '1'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '2'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '3'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '4'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '5'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'June') {
     document.querySelector('#d1').innerHTML = '30'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '31'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '1'
     document.querySelector('#d4').innerHTML = '2'
     document.querySelector('#d5').innerHTML = '3'
@@ -304,20 +502,66 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d31').innerHTML = '29'
     document.querySelector('#d32').innerHTML = '30'
     document.querySelector('#d33').innerHTML = '1'
+    document
+      .getElementById('d33')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d34').innerHTML = '2'
+    document
+      .getElementById('d34')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d35').innerHTML = '3'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = '4'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = '5'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '6'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '7'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '8'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '9'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '10'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'July') {
     document.querySelector('#d1').innerHTML = '27'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d2').innerHTML = '28'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d3').innerHTML = '29'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d4').innerHTML = '30'
+    document
+      .getElementById('d4')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d5').innerHTML = '1'
     document.querySelector('#d6').innerHTML = '2'
     document.querySelector('#d7').innerHTML = '3'
@@ -350,20 +594,48 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d34').innerHTML = '30'
     document.querySelector('#d35').innerHTML = '31'
     document.querySelector('#d36').innerHTML = '1'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = '2'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '3'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '4'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '5'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '6'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '7'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'August') {
     document.querySelector('#d1').innerHTML = '1'
+
     document.querySelector('#d2').innerHTML = '2'
+
     document.querySelector('#d3').innerHTML = '3'
+
     document.querySelector('#d4').innerHTML = '4'
+
     document.querySelector('#d5').innerHTML = '5'
+
     document.querySelector('#d6').innerHTML = '6'
+
     document.querySelector('#d7').innerHTML = '7'
+
     document.querySelector('#d8').innerHTML = '8'
     document.querySelector('#d9').innerHTML = '9'
     document.querySelector('#d10').innerHTML = '10'
@@ -389,20 +661,66 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d30').innerHTML = '30'
     document.querySelector('#d31').innerHTML = '31'
     document.querySelector('#d32').innerHTML = '1'
+    document
+      .getElementById('d32')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d33').innerHTML = '2'
+    document
+      .getElementById('d33')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d34').innerHTML = '3'
+    document
+      .getElementById('d34')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d35').innerHTML = '4'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = '5'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d37').innerHTML = '6'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '7'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '8'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '9'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '10'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '11'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'September') {
     document.querySelector('#d1').innerHTML = '29'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d2').innerHTML = '30'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '31'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d4').innerHTML = '1'
     document.querySelector('#d5').innerHTML = '2'
     document.querySelector('#d6').innerHTML = '3'
@@ -434,20 +752,62 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d32').innerHTML = '29'
     document.querySelector('#d33').innerHTML = '30'
     document.querySelector('#d34').innerHTML = '1'
+    document
+      .getElementById('d34')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d35').innerHTML = '2'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = '3'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = '4'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '5'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '6'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '7'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '8'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '9'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'October') {
     document.querySelector('#d1').innerHTML = '26'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '27'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '28'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d4').innerHTML = '29'
+    document
+      .getElementById('d4')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d5').innerHTML = '30'
+    document
+      .getElementById('d5')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d6').innerHTML = '1'
     document.querySelector('#d7').innerHTML = '2'
     document.querySelector('#d8').innerHTML = '3'
@@ -480,13 +840,35 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d35').innerHTML = '30'
     document.querySelector('#d36').innerHTML = '31'
     document.querySelector('#d37').innerHTML = '1'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '2'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '3'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '4'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '5'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '6'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'November') {
     document.querySelector('#d1').innerHTML = '31'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
+
     document.querySelector('#d2').innerHTML = '1'
     document.querySelector('#d3').innerHTML = '2'
     document.querySelector('#d4').innerHTML = '3'
@@ -518,20 +900,62 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d30').innerHTML = '29'
     document.querySelector('#d31').innerHTML = '30'
     document.querySelector('#d32').innerHTML = '1'
+    document
+      .getElementById('d32')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d33').innerHTML = '2'
+    document
+      .getElementById('d33')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d34').innerHTML = '3'
+    document
+      .getElementById('d34')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d35').innerHTML = '4'
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = '5'
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = '6'
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = '7'
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = '8'
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = '9'
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = '10'
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = '11'
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   } else if (monthSel.value === 'December') {
     document.querySelector('#d1').innerHTML = '28'
+    document
+      .getElementById('d1')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d2').innerHTML = '29'
+    document
+      .getElementById('d2')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d3').innerHTML = '30'
+    document
+      .getElementById('d3')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d4').innerHTML = '1'
     document.querySelector('#d5').innerHTML = '2'
     document.querySelector('#d6').innerHTML = '3'
@@ -564,12 +988,36 @@ monthSel.addEventListener('change', () => {
     document.querySelector('#d33').innerHTML = '30'
     document.querySelector('#d34').innerHTML = '31'
     document.querySelector('#d35').innerHTML = ''
+    document
+      .getElementById('d35')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d36').innerHTML = ''
+    document
+      .getElementById('d36')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d37').innerHTML = ''
+    document
+      .getElementById('d37')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d38').innerHTML = ''
+    document
+      .getElementById('d38')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d39').innerHTML = ''
+    document
+      .getElementById('d39')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d40').innerHTML = ''
+    document
+      .getElementById('d40')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d41').innerHTML = ''
+    document
+      .getElementById('d41')
+      .parentElement.classList.add('days_big_off_month')
     document.querySelector('#d42').innerHTML = ''
+    document
+      .getElementById('d42')
+      .parentElement.classList.add('days_big_off_month')
   }
 })

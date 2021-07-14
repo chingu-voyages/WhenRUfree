@@ -2,13 +2,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   color: navy;
 }
 .test {
@@ -431,6 +431,17 @@ span {
   font-size: 1em;
   margin: 0.6em;
 }
+.days_big_off_month {
+  width: 7em;
+  height: 5em;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(163, 163, 163);
+  border-radius: 11px;
+  border: none;
+  font-size: 1em;
+  margin: 0.6em;
+}
 
 table {
   margin-left: auto;
@@ -492,7 +503,6 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .big-actions div {
