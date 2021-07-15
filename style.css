@@ -964,9 +964,22 @@ td:hover {
   .user-key-container {
     width: 100%;
   }
+  #Eventname {
+    justify-content: left;
+    display: block;
+    margin-left: -8em;
+    width: 50%;
+  }
+  #Eventbtn {
+    justify-content: left;
+    display: block;
+    margin-left: -15em;
+    width: 50%;
+   
+  }
   
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   .days {
     width: 0.2em;
     height: auto;
@@ -1022,6 +1035,7 @@ td:hover {
     display: block;
     margin-left: -15em;
     width: 50%;
+  
   }
  
   
