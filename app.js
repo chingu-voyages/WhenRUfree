@@ -15,11 +15,26 @@ const offMonthList = document.getElementsByClassName('days_big_off_month')
 // login functionality 👇
 function check(form) {
   if (
-    form.email.value == '123@xyz.com' &&
+    form.email.value == 'Huda@whenrufree.com' &&
     form.password.value == 'toucans31!'
   ) {
     window.open('about.html')
-    console.log(form.email.value)
+    // console.log(form.email.value)
+  } else if (
+    form.email.value == 'Ashley@whenrufree.com' &&
+    form.password.value == 'toucans31!'
+  ) {
+    window.open('about.html')
+  } else if (
+    form.email.value == 'Ambareen@whenrufree.com' &&
+    form.password.value == 'toucans31!'
+  ) {
+    window.open('about.html')
+  } else if (
+    form.email.value == 'Paolo@whenrufree.com' &&
+    form.password.value == 'toucans31!'
+  ) {
+    window.open('about.html')
   } else {
     alert(
       'There is something wrong with your password/email.  Click the cancel button to try again'
