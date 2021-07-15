@@ -2,13 +2,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: navy;
 }
 .test {
@@ -881,7 +881,7 @@ td:hover {
   }
   .calender-container {
     margin: 0;
-    width: 120%;
+    width: 130%;
   }
 
   .user-key {
@@ -912,6 +912,15 @@ td:hover {
   .days {
     width: 0.5em;
     height: 0.5em;
+  }
+
+  #days {
+    margin-left: -0.5em;
+    padding-right: -1em;
+  }
+
+  .calender-container {
+    width: 100%;
   }
 
   .days_big {
@@ -952,17 +961,28 @@ td:hover {
   .days {
     width: 0.2em;
     height: auto;
-    margin-left: 0.05em;
   }
 
   .days_big {
     width: 0.2em;
     height: auto;
   }
-  .calender-container {
-    margin-left: 0;
+
+  .days_big span {
+    position: relative;
+    margin: auto;
+  }
+  /*.calender-container {
     width: 375px;
     height: auto;
+  }*/
+
+  .calender-container {
+    width: 101%;
+  }
+
+  .big-calender-container {
+    width: 95%;
   }
 
   .user-key {
@@ -1012,7 +1032,7 @@ td:hover {
   }
 
   .big-months select {
-    width: 40%;
+    width: 38%;
   }
 
   #noearlier {
