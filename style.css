@@ -685,6 +685,13 @@ td:hover {
   display: block;
   margin: 0 auto;
 }
+.meet-team {
+ float: right;
+ background-color: rgba(121, 114, 180, 0.12);
+  padding: .4em;
+  border-radius: 1em;
+  
+}
 
 .btn-close {
   margin-top: 0.5em;
