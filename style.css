@@ -22,27 +22,31 @@ header {
 }
 .circPaolo {
   border-radius: 50%;
-  height: 5px;
-  width: 5px;
+  height: 8px; 
+  width: 8px;
   background-color: #ff0000;
+  margin-right: .2em;
 }
 .circAshley {
   border-radius: 50%;
-  height: 5px;
-  width: 5px;
+  height: 8px; 
+  width: 8px;
   background-color: purple;
+  margin-right: .2em;
 }
 .circHuda {
   border-radius: 50%;
-  height: 5px;
-  width: 5px;
   background-color: blue;
+  height: 8px; 
+  width: 8px;
+  margin-right: .2em;
 }
 .circAmberdeen {
   border-radius: 50%;
-  height: 5px;
-  width: 5px;
   background-color: green;
+  height: 8px; 
+  width: 8px;
+  margin-right: .2em;
 }
 
 .circHidePaolo {
