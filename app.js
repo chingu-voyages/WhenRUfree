@@ -35,6 +35,10 @@ function check(form) {
     form.password.value == 'toucans31!'
   ) {
     window.open('about.html')
+  } else if (
+    form.email.value == 'guest@whenrufree.com' &&
+    form.password.value == 'guest123'
+  ) {
   } else {
     alert(
       'There is something wrong with your password/email.  Click the cancel button to try again'
