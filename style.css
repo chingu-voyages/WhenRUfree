@@ -2,19 +2,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(rgb(69, 69, 250), white);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   color: navy;
-}
-.test {
-  position: relative;
-  transform: translateY(-100%);
-  transform: rotate(-90deg);
 }
 .circDown {
   position: relative;
@@ -25,10 +20,6 @@ header {
 .circPaolo {
   float: left;
 }
-.circ {
-  margin: 0.2em;
-}
-
 .circPaolo {
   border-radius: 50%;
   height: 5px;
@@ -450,8 +441,8 @@ table {
 }
 .user-key {
   border-radius: 0.5em;
-  width: 0.5em;
-  height: 0.5em;
+  width: 1.3em;
+  height: 1em;
   display: inline-block;
   margin-left: 10em;
 }
@@ -729,7 +720,7 @@ td:hover {
     margin-left: 10em;
   }
   #container {
-    margin-left: 20em;
+    margin-left: 10em;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -837,6 +828,12 @@ td:hover {
     text-align: left;
     margin-left: 0.5em;
   }
+  .days_big {
+    width:5.5em;
+    height: auto;
+  }
+  
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -867,6 +864,9 @@ td:hover {
   }
   #Eventbtn {
     margin-left: -8em;
+  }
+  .user-key-container {
+    width: 90%;
   }
 }
 
@@ -909,7 +909,7 @@ td:hover {
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 414px) {
   .days {
     width: 0.5em;
     height: 0.5em;
@@ -919,9 +919,15 @@ td:hover {
     margin-left: -0.5em;
     padding-right: -1em;
   }
-
-  .calender-container {
-    width: 100%;
+  .circDown {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  .d-big {
+    margin: 0em;
+    margin-top: 1.2em;
   }
 
   .days_big {
@@ -956,9 +962,25 @@ td:hover {
   #big-back {
     height: 80%;
   }
-}
+  .user-key-container {
+    width: 100%;
+  }
+  #Eventname {
+    justify-content: left;
+    display: block;
+    margin-left: -8em;
+    width: 50%;
+  }
+  #Eventbtn {
+    justify-content: left;
+    display: block;
+    margin-left: -15em;
+    width: 50%;
+   
+  }
+  
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   .days {
     width: 0.2em;
     height: auto;
@@ -1014,7 +1036,10 @@ td:hover {
     display: block;
     margin-left: -15em;
     width: 50%;
+  
   }
+ 
+  
 }
 
 @media only screen and (max-width: 360px) {
@@ -1054,4 +1079,5 @@ td:hover {
     top: 12%;
     right: 2%;
   }
+}
 }
