@@ -115,12 +115,13 @@ header {
   font-size: 20px;
 }
 
-.loginbox button {
+.sign-up-link {
   width: 40%;
   height: 40px;
   border: 1px solid #d7d7d7;
   border-radius: 6px;
   outline: none;
+  padding-top: 0.25em;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
