@@ -39,6 +39,7 @@ function check(form) {
     form.email.value == 'guest@whenrufree.com' &&
     form.password.value == 'guest123'
   ) {
+    window.open('about.html')
   } else {
     alert(
       'There is something wrong with your password/email.  Click the cancel button to try again'
